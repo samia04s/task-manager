@@ -1,0 +1,85 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --task-bg: #f0f0f0;
+    --btn-color: #007bff;
+  }
+  
+  body.dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #f0f0f0;
+    --task-bg: #2d2d2d;
+    --btn-color: #00aaff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .input-section {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    padding: 10px;
+    margin: 5px;
+    width: 60%;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: var(--btn-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: var(--task-bg);
+    padding: 10px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  
+  .theme-toggle {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .due-date {
+    font-size: 0.85em;
+    color: gray;
+  }
+  
